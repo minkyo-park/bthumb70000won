@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>적용 방법 - 빗썸 7만원 이벤트</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>빗썸 7만원 이벤트</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="apply.html" class="nav-link active">적용 방법</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="support.html" class="nav-link">고객센터</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="discount.html" class="nav-link">할인정보</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 페이지 헤더 -->
+        <section class="page-header">
+            <div class="container">
+                <h1>적용 방법</h1>
+                <p>빗썸 7만원 이벤트 참여 방법을 단계별로 안내해드립니다</p>
+            </div>
+        </section>
+
+        <!-- 단계별 가이드 -->
+        <section class="step-guide">
+            <div class="container">
+                <div class="guide-intro">
+                    <h2>🎯 3단계로 완성하는 7만원 혜택</h2>
+                    <p>아래 단계를 순서대로 따라하시면 쉽게 혜택을 받으실 수 있습니다</p>
+                </div>
+
+                <div class="steps-container">
+                    <!-- 1단계 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <div class="step-title">
+                                <h3>전용 링크로 앱 설치</h3>
+                                <p>이벤트 전용 링크를 통해 빗썸 앱을 설치하세요</p>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-details">
+                                <div class="detail-item">
+                                    <div class="detail-icon">📱</div>
+                                    <div class="detail-text">
+                                        <h4>모바일에서 접속</h4>
+                                        <p>PC에서는 참여할 수 없습니다. 반드시 모바일 기기에서 접속해주세요.</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon">🔗</div>
+                                    <div class="detail-text">
+                                        <h4>전용 링크 사용</h4>
+                                        <p>일반 앱스토어가 아닌 제공된 전용 링크를 사용해야 이벤트 참여가 가능합니다.</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon">📲</div>
+                                    <div class="detail-text">
+                                        <h4>앱 설치 완료</h4>
+                                        <p>빗썸 앱이 정상적으로 설치되었는지 확인하세요.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-action">
+                                <button class="btn-primary" onclick="window.open('#', '_blank')">앱 설치하기</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2단계 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <div class="step-title">
+                                <h3>신규 가입 및 쿠폰 등록</h3>
+                                <p>빗썸에 신규 가입하고 쿠폰번호를 등록하세요</p>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-details">
+                                <div class="detail-item">
+                                    <div class="detail-icon">👤</div>
+                                    <div class="detail-text">
+                                        <h4>신규 가입</h4>
+                                        <p>빗썸에 가입한 적이 없는 신규 고객만 참여 가능합니다.</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon">🎫</div>
+                                    <div class="detail-text">
+                                        <h4>쿠폰번호 등록</h4>
+                                        <p>가입 후 제공된 쿠폰번호를 등록하면 50,000원이 즉시 지급됩니다.</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon">🏦</div>
+                                    <div class="detail-text">
+                                        <h4>KB국민은행 계좌 등록</h4>
+                                        <p>원화 입출금을 위해 KB국민은행 계좌 등록이 필수입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-action">
+                                <button class="btn-secondary" onclick="showCouponModal()">쿠폰번호 확인</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3단계 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <div class="step-number">3</div>
+                            <div class="step-title">
+                                <h3>웰컴 미션 참여</h3>
+                                <p>웰컴 미션을 완료하여 추가 20,000원을 받으세요</p>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-details">
+                                <div class="detail-item">
+                                    <div class="detail-icon">📱</div>
+                                    <div class="detail-text">
+                                        <h4>앱 로그인</h4>
+                                        <p>빗썸 앱에 로그인한 후 메뉴로 이동하세요.</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon">🎁</div>
+                                    <div class="detail-text">
+                                        <h4>혜택/서비스 메뉴</h4>
+                                        <p>메뉴에서 '혜택/서비스'를 선택하세요.</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon">🎯</div>
+                                    <div class="detail-text">
+                                        <h4>웰컴미션 참여</h4>
+                                        <p>웰컴미션 섹션에서 각 미션을 완료하세요.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-action">
+                                <button class="btn-primary" onclick="showMissionGuide()">미션 가이드 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 웰컴 미션 상세 가이드 -->
+        <section class="mission-details">
+            <div class="container">
+                <h2 class="section-title">웰컴 미션 상세 가이드</h2>
+                <div class="mission-grid">
+                    <div class="mission-item">
+                        <div class="mission-icon">✅</div>
+                        <h3>첫 거래 완료</h3>
+                        <p>빗썸에서 첫 번째 암호화폐 거래를 완료하세요. 매수 또는 매도 거래 모두 가능합니다.</p>
+                        <div class="mission-reward">보상: 10,000원</div>
+                    </div>
+                    <div class="mission-item">
+                        <div class="mission-icon">🆔</div>
+                        <h3>KYC 인증</h3>
+                        <p>본인 인증을 완료하여 계정 보안을 강화하세요. 신분증과 얼굴 사진이 필요합니다.</p>
+                        <div class="mission-reward">보상: 5,000원</div>
+                    </div>
+                    <div class="mission-item">
+                        <div class="mission-icon">💰</div>
+                        <h3>입금하기</h3>
+                        <p>KB국민은행 계좌에서 빗썸 계정으로 원화를 입금하세요. 최소 10,000원 이상 입금 필요합니다.</p>
+                        <div class="mission-reward">보상: 5,000원</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 주의사항 -->
+        <section class="important-notice">
+            <div class="container">
+                <h2 class="section-title">⚠️ 중요한 주의사항</h2>
+                <div class="notice-grid">
+                    <div class="notice-card">
+                        <div class="notice-icon">🚫</div>
+                        <h4>PC 가입 불가</h4>
+                        <p>PC에서는 이벤트 참여가 불가능합니다. 반드시 모바일 웹 또는 앱을 사용하세요.</p>
+                    </div>
+                    <div class="notice-card">
+                        <div class="notice-icon">👤</div>
+                        <h4>신규 가입만 가능</h4>
+                        <p>기존 가입자나 탈퇴 후 재가입자는 참여할 수 없습니다.</p>
+                    </div>
+                    <div class="notice-card">
+                        <div class="notice-icon">🏦</div>
+                        <h4>KB국민은행 필수</h4>
+                        <p>다른 은행 계좌로는 참여할 수 없습니다. KB국민은행 계좌 등록이 필수입니다.</p>
+                    </div>
+                    <div class="notice-card">
+                        <div class="notice-icon">⏰</div>
+                        <h4>선착순 마감</h4>
+                        <p>재고 소진 시 이벤트가 조기 마감될 수 있습니다. 빠른 참여를 권장합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq">
+            <div class="container">
+                <h2 class="section-title">자주 묻는 질문</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Q. 언제 혜택이 지급되나요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>쿠폰 등록 시 50,000원은 즉시 지급되며, 웰컴 미션 완료 시 20,000원이 추가로 지급됩니다.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Q. 탈퇴 후 재가입해도 참여할 수 있나요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>아니요. 생애 최초 신규 가입자만 참여 가능합니다. 탈퇴 후 재가입 시에는 참여할 수 없습니다.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Q. 다른 은행 계좌로도 참여할 수 있나요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>아니요. KB국민은행 원화 입출금 계좌 등록이 필수입니다. 다른 은행 계좌로는 참여할 수 없습니다.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Q. 웰컴 미션을 모두 완료해야 하나요?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>아니요. 각 미션을 개별적으로 완료할 때마다 해당 보상을 받을 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>빗썸 7만원 이벤트</h3>
+                    <p>신규 가입자를 위한 특별 혜택</p>
+                </div>
+                <div class="footer-section">
+                    <h4>빠른 링크</h4>
+                    <ul>
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="support.html">고객센터</a></li>
+                        <li><a href="discount.html">할인정보</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>고객지원</h4>
+                    <p>평일 09:00 - 18:00</p>
+                    <p>토요일 09:00 - 13:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 빗썸 7만원 이벤트. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 쿠폰 모달 -->
+    <div id="couponModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCouponModal()">&times;</span>
+            <h3>쿠폰번호</h3>
+            <div class="coupon-code">
+                <span id="couponCode">BITHUMB70000</span>
+                <button onclick="copyCouponCode()">복사</button>
+            </div>
+            <p>위 쿠폰번호를 빗썸 앱에서 등록하세요</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
