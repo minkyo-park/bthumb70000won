@@ -310,7 +310,7 @@ section {
 }
 
 .detail-text {
-    color: #fff;
+    color: #333;
     margin-left: 5px;
 }
 
@@ -817,8 +817,8 @@ section {
 }
 
 .detail-item {
-    background: rgba(102, 126, 234, 0.1);
-    color: #667eea;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     padding: 4px 12px;
     border-radius: 15px;
     font-size: 0.85rem;
@@ -1148,6 +1148,335 @@ section {
     .summary-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+}
+
+/* 웰컴미션 가이드 페이지 스타일 */
+.mission-guide {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.page-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 60px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-overview {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mission-overview h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.overview-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.overview-item:hover {
+    transform: translateY(-5px);
+}
+
+.overview-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.overview-item h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.overview-item p {
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.mission-steps {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mission-steps h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.step-guide {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    border-left: 5px solid #667eea;
+}
+
+.step-number {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.step-description {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.step-details h4 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.step-details ul {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.step-details li {
+    margin-bottom: 8px;
+}
+
+.step-tip {
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #ffc107;
+    color: #856404;
+}
+
+.mission-rewards {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mission-rewards h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.reward-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.reward-step {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    min-width: 200px;
+}
+
+.reward-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.reward-step h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.reward-step p {
+    color: #666;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.reward-arrow {
+    font-size: 2rem;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.mission-notes {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mission-notes h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.note-item {
+    background: #fff3cd;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 4px solid #ffc107;
+}
+
+.note-item h4 {
+    color: #856404;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.note-item p {
+    color: #856404;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.mission-cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.mission-cta h2 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+.mission-cta p {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn-primary,
+.cta-buttons .btn-secondary {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.cta-buttons .btn-primary {
+    background: white;
+    color: #667eea;
+    border: 2px solid white;
+}
+
+.cta-buttons .btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-buttons .btn-primary:hover,
+.cta-buttons .btn-secondary:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .step-guide {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .reward-info {
+        flex-direction: column;
+    }
+    
+    .reward-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
