@@ -365,6 +365,26 @@ function showDepositInfo() {
     alert('입금 보너스:\n\n• 입금 금액의 1% 추가 지급\n• 최대 50,000원까지 지급\n• 월 1회 제한\n• KB국민은행 계좌 입금 시에만 적용');
 }
 
+// 거래왕 대회 정보 표시
+function showTradingKingInfo() {
+    alert('거래왕 대회:\n\n• 월간 거래량 순위에 따른 상금 지급\n• 1위: 100만원, 2위: 50만원, 3위: 30만원\n• 매월 1일부터 말일까지 진행\n• 거래량 기준으로 순위 결정');
+}
+
+// 에어드랍 이벤트 정보 표시
+function showAirdropInfo() {
+    alert('신규 코인 거래 에어드랍:\n\n• 신규 상장 코인 거래 시 에어드랍 혜택\n• 거래량에 비례하여 신규 코인 지급\n• 한정 기간 동안만 진행\n• 상장 후 1주일간 혜택 제공');
+}
+
+// 출석 체크 이벤트 정보 표시
+function showAttendanceInfo() {
+    alert('출석 체크 이벤트:\n\n• 매일 앱 접속 시 출석 체크 가능\n• 연속 출석일수에 따라 혜택 증가\n• 7일 연속: 1,000원, 30일 연속: 5,000원\n• 누적 출석일수에 따른 추가 혜택');
+}
+
+// VIP 혜택 정보 표시
+function showVipInfo() {
+    alert('VIP 등급 혜택:\n\n• 거래량에 따른 자동 등급 부여\n• VIP 1: 20% 할인, VIP 2: 40% 할인\n• VIP 3: 60% 할인, VIP 4: 80% 할인\n• 매월 1일 기준으로 등급 업데이트');
+}
+
 // 문의 양식 제출
 document.addEventListener('DOMContentLoaded', function() {
     const inquiryForm = document.getElementById('inquiryForm');

@@ -106,7 +106,11 @@
         <!-- 진행 중인 이벤트 -->
         <section class="current-events">
             <div class="container">
-                <h2 class="section-title">진행 중인 이벤트</h2>
+                <h2 class="section-title">빗썸 진행 중인 모든 이벤트</h2>
+                <div class="events-intro">
+                    <p>빗썸에서 <strong>현재 진행 중인 모든 이벤트</strong>를 한곳에 모아 상세히 정리했습니다. 신규 가입자 대상 <strong>"7만원 지급 이벤트"</strong>부터, <strong>거래왕 대회</strong>, <strong>신규 코인 거래 에어드랍</strong>, <strong>출석 체크</strong>, <strong>친구초대</strong> 등 풍성한 혜택들이 마련되어 있습니다.</p>
+                </div>
+                
                 <div class="events-grid">
                     <div class="event-card main-event">
                         <div class="event-badge">메인 이벤트</div>
@@ -114,6 +118,11 @@
                         <div class="event-amount">70,000원</div>
                         <p>쿠폰 등록 50,000원 + 웰컴 미션 20,000원</p>
                         <div class="event-period">재고 소진 시까지</div>
+                        <div class="event-details">
+                            <span class="detail-item">생애 최초 가입</span>
+                            <span class="detail-item">KB국민은행 필수</span>
+                            <span class="detail-item">모바일만 가능</span>
+                        </div>
                         <button class="btn-primary" onclick="window.open('#', '_blank')">참여하기</button>
                     </div>
 
@@ -129,6 +138,11 @@
                         <div class="event-amount">각 10,000원</div>
                         <p>친구 추천 시 추천인과 피추천인 각각 10,000원 지급</p>
                         <div class="event-period">상시 진행</div>
+                        <div class="event-details">
+                            <span class="detail-item">상시 진행</span>
+                            <span class="detail-item">양방향 혜택</span>
+                            <span class="detail-item">무제한 참여</span>
+                        </div>
                         <button class="btn-secondary" onclick="showReferralInfo()">자세히 보기</button>
                     </div>
 
@@ -144,6 +158,11 @@
                         <div class="event-amount">5,000원</div>
                         <p>첫 거래 완료 시 추가 5,000원 보너스 지급</p>
                         <div class="event-period">신규 가입자 대상</div>
+                        <div class="event-details">
+                            <span class="detail-item">신규 가입자</span>
+                            <span class="detail-item">첫 거래 완료</span>
+                            <span class="detail-item">즉시 지급</span>
+                        </div>
                         <button class="btn-secondary" onclick="showTradingInfo()">자세히 보기</button>
                     </div>
 
@@ -159,7 +178,92 @@
                         <div class="event-amount">1% 보너스</div>
                         <p>입금 금액의 1% 추가 지급 (최대 50,000원)</p>
                         <div class="event-period">월 1회 제한</div>
+                        <div class="event-details">
+                            <span class="detail-item">월 1회 제한</span>
+                            <span class="detail-item">최대 5만원</span>
+                            <span class="detail-item">KB국민은행</span>
+                        </div>
                         <button class="btn-secondary" onclick="showDepositInfo()">자세히 보기</button>
+                    </div>
+
+                    <div class="event-card" id="trading-king">
+                        <div class="event-badge">거래왕 대회</div>
+                        <div class="event-image-container">
+                            <div class="event-image trading-image">
+                                <img src="images/4.jpg" alt="거래왕 대회" class="event-bg-image">
+                                <div class="image-overlay">거래왕</div>
+                            </div>
+                        </div>
+                        <h3>거래왕 대회</h3>
+                        <div class="event-amount">최대 100만원</div>
+                        <p>거래량 순위에 따른 상금 지급</p>
+                        <div class="event-period">월간 진행</div>
+                        <div class="event-details">
+                            <span class="detail-item">월간 대회</span>
+                            <span class="detail-item">순위별 상금</span>
+                            <span class="detail-item">최대 100만원</span>
+                        </div>
+                        <button class="btn-secondary" onclick="showTradingKingInfo()">자세히 보기</button>
+                    </div>
+
+                    <div class="event-card" id="airdrop-event">
+                        <div class="event-badge">에어드랍</div>
+                        <div class="event-image-container">
+                            <div class="event-image airdrop-image">
+                                <img src="images/5.jpg" alt="신규 코인 에어드랍" class="event-bg-image">
+                                <div class="image-overlay">에어드랍</div>
+                            </div>
+                        </div>
+                        <h3>신규 코인 거래 에어드랍</h3>
+                        <div class="event-amount">신규 코인</div>
+                        <p>신규 상장 코인 거래 시 에어드랍 혜택</p>
+                        <div class="event-period">신규 상장 시</div>
+                        <div class="event-details">
+                            <span class="detail-item">신규 상장</span>
+                            <span class="detail-item">거래 시 혜택</span>
+                            <span class="detail-item">한정 기간</span>
+                        </div>
+                        <button class="btn-secondary" onclick="showAirdropInfo()">자세히 보기</button>
+                    </div>
+
+                    <div class="event-card" id="attendance-event">
+                        <div class="event-badge">출석 체크</div>
+                        <div class="event-image-container">
+                            <div class="event-image attendance-image">
+                                <img src="images/1.jpg" alt="출석 체크" class="event-bg-image">
+                                <div class="image-overlay">출석</div>
+                            </div>
+                        </div>
+                        <h3>출석 체크 이벤트</h3>
+                        <div class="event-amount">일일 혜택</div>
+                        <p>매일 출석 체크로 다양한 혜택 받기</p>
+                        <div class="event-period">상시 진행</div>
+                        <div class="event-details">
+                            <span class="detail-item">매일 출석</span>
+                            <span class="detail-item">연속 출석</span>
+                            <span class="detail-item">누적 혜택</span>
+                        </div>
+                        <button class="btn-secondary" onclick="showAttendanceInfo()">자세히 보기</button>
+                    </div>
+
+                    <div class="event-card" id="vip-event">
+                        <div class="event-badge">VIP 혜택</div>
+                        <div class="event-image-container">
+                            <div class="event-image vip-image">
+                                <img src="images/2.jpg" alt="VIP 혜택" class="event-bg-image">
+                                <div class="image-overlay">VIP</div>
+                            </div>
+                        </div>
+                        <h3>VIP 등급 혜택</h3>
+                        <div class="event-amount">최대 80% 할인</div>
+                        <p>거래량에 따른 VIP 등급별 수수료 할인</p>
+                        <div class="event-period">상시 적용</div>
+                        <div class="event-details">
+                            <span class="detail-item">거래량 기준</span>
+                            <span class="detail-item">자동 적용</span>
+                            <span class="detail-item">최대 80% 할인</span>
+                        </div>
+                        <button class="btn-secondary" onclick="showVipInfo()">자세히 보기</button>
                     </div>
                 </div>
             </div>
