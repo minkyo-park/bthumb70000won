@@ -1480,6 +1480,274 @@ section {
     }
 }
 
+/* 상세한 사용 방법 섹션 스타일 */
+.detailed-usage {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.usage-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 60px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.usage-cases {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.usage-case {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.case-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.case-number {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.case-header h3 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.case-header p {
+    color: #666;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    border-left: 5px solid #667eea;
+}
+
+.step-number {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h4 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.step-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.step-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.step-img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 3px solid #e9ecef;
+}
+
+.step-action {
+    margin-top: 20px;
+}
+
+.code-display {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.code-box {
+    display: inline-flex;
+    align-items: center;
+    background: #f8f9fa;
+    border: 2px solid #667eea;
+    border-radius: 10px;
+    padding: 15px 20px;
+    gap: 15px;
+}
+
+.code-text {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.copy-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.copy-btn:hover {
+    background: #5a6fd8;
+}
+
+.step-result {
+    margin-top: 20px;
+}
+
+.result-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.result-box.success {
+    background: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.result-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.result-text h5 {
+    color: #155724;
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.result-text p {
+    color: #155724;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.usage-notes {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.usage-notes h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.note-item {
+    background: #fff3cd;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 4px solid #ffc107;
+}
+
+.note-item h4 {
+    color: #856404;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.note-item p {
+    color: #856404;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .usage-case {
+        padding: 30px 20px;
+    }
+    
+    .step-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .step-number {
+        align-self: center;
+    }
+    
+    .step-img {
+        max-width: 250px;
+    }
+    
+    .code-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .result-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 /* FAQ 섹션 */
 .faq-section {
     background: white;

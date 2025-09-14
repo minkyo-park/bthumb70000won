@@ -420,6 +420,23 @@ function showOfflineInfo() {
     alert('KBW2025 빗썸존 이벤트:\n\n• 기간: 2025.9.23 ~ 9.24\n• 장소: 코리아블록체인위크(KBW) 행사장\n• 조건: 현장 방문 + 부스 미션 참여\n• 보상: 최대 15만원 상당 에어드랍 + 한정 굿즈\n• 특징: 20여개 프로젝트 재단과 협업\n• 굿즈: 빗썸BTC빵 등 한정판 아이템\n• 대상: 블록체인 행사 참석자');
 }
 
+// 코드 복사 기능
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+        alert('코드가 복사되었습니다: ' + text);
+    }, function(err) {
+        console.error('복사 실패: ', err);
+        // 폴백: 텍스트 선택
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        alert('코드가 복사되었습니다: ' + text);
+    });
+}
+
 // 문의 양식 제출
 document.addEventListener('DOMContentLoaded', function() {
     const inquiryForm = document.getElementById('inquiryForm');
