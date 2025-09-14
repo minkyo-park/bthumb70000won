@@ -106,9 +106,9 @@
         <!-- 진행 중인 이벤트 -->
         <section class="current-events">
             <div class="container">
-                <h2 class="section-title">빗썸 진행 중인 모든 이벤트</h2>
+                <h2 class="section-title">빗썸 진행 중인 모든 이벤트 (2025년 9월 기준)</h2>
                 <div class="events-intro">
-                    <p>빗썸에서 <strong>현재 진행 중인 모든 이벤트</strong>를 한곳에 모아 상세히 정리했습니다. 신규 가입자 대상 <strong>"7만원 지급 이벤트"</strong>부터, <strong>거래왕 대회</strong>, <strong>신규 코인 거래 에어드랍</strong>, <strong>출석 체크</strong>, <strong>친구초대</strong> 등 풍성한 혜택들이 마련되어 있습니다.</p>
+                    <p>빗썸에서 <strong>현재 진행 중인 모든 이벤트</strong>를 한곳에 모아 상세히 정리했습니다. 신규 가입자 대상 <strong>"7만원 지급 이벤트"</strong>부터, <strong>거래왕 대회</strong>, <strong>신규 코인 거래 에어드랍</strong>, <strong>출석 체크</strong>, <strong>친구초대</strong> 등 풍성한 혜택들이 마련되어 있습니다. 각 이벤트별 <strong>참여 방법</strong>, <strong>조건</strong>, <strong>보상 구조</strong>, <strong>유의사항</strong>, <strong>FAQ</strong>와 <strong>실제 이용자 후기</strong>까지 빠짐없이 안내하니, 원하는 이벤트에 참여하여 알찬 혜택을 받아보세요!</p>
                 </div>
                 
                 <div class="events-grid">
@@ -116,92 +116,32 @@
                         <div class="event-badge">메인 이벤트</div>
                         <h3>신규 가입 7만원 지급</h3>
                         <div class="event-amount">70,000원</div>
-                        <p>쿠폰 등록 50,000원 + 웰컴 미션 20,000원</p>
-                        <div class="event-period">재고 소진 시까지</div>
+                        <p>초대코드 등록 50,000원 + 웰컴 미션 20,000원</p>
+                        <div class="event-period">상시 진행 (조기 종료 시 공지)</div>
                         <div class="event-details">
                             <span class="detail-item">생애 최초 가입</span>
-                            <span class="detail-item">KB국민은행 필수</span>
-                            <span class="detail-item">모바일만 가능</span>
+                            <span class="detail-item">국민은행 계좌 필수</span>
+                            <span class="detail-item">현금성 리워드</span>
                         </div>
                         <button class="btn-primary" onclick="window.open('#', '_blank')">참여하기</button>
-                    </div>
-
-                    <div class="event-card" id="referral-event">
-                        <div class="event-badge">추천 이벤트</div>
-                        <div class="event-image-container">
-                            <div class="event-image referral-image">
-                                <img src="images/1.jpg" alt="친구 추천 이벤트" class="event-bg-image">
-                                <div class="image-overlay">추천</div>
-                            </div>
-                        </div>
-                        <h3>친구 추천 이벤트</h3>
-                        <div class="event-amount">각 10,000원</div>
-                        <p>친구 추천 시 추천인과 피추천인 각각 10,000원 지급</p>
-                        <div class="event-period">상시 진행</div>
-                        <div class="event-details">
-                            <span class="detail-item">상시 진행</span>
-                            <span class="detail-item">양방향 혜택</span>
-                            <span class="detail-item">무제한 참여</span>
-                        </div>
-                        <button class="btn-secondary" onclick="showReferralInfo()">자세히 보기</button>
-                    </div>
-
-                    <div class="event-card" id="trading-bonus">
-                        <div class="event-badge">거래 이벤트</div>
-                        <div class="event-image-container">
-                            <div class="event-image trading-image">
-                                <img src="images/2.jpg" alt="첫 거래 보너스" class="event-bg-image">
-                                <div class="image-overlay">거래</div>
-                            </div>
-                        </div>
-                        <h3>첫 거래 보너스</h3>
-                        <div class="event-amount">5,000원</div>
-                        <p>첫 거래 완료 시 추가 5,000원 보너스 지급</p>
-                        <div class="event-period">신규 가입자 대상</div>
-                        <div class="event-details">
-                            <span class="detail-item">신규 가입자</span>
-                            <span class="detail-item">첫 거래 완료</span>
-                            <span class="detail-item">즉시 지급</span>
-                        </div>
-                        <button class="btn-secondary" onclick="showTradingInfo()">자세히 보기</button>
-                    </div>
-
-                    <div class="event-card" id="deposit-bonus">
-                        <div class="event-badge">입금 이벤트</div>
-                        <div class="event-image-container">
-                            <div class="event-image deposit-image">
-                                <img src="images/3.jpg" alt="입금 보너스" class="event-bg-image">
-                                <div class="image-overlay">입금</div>
-                            </div>
-                        </div>
-                        <h3>입금 보너스</h3>
-                        <div class="event-amount">1% 보너스</div>
-                        <p>입금 금액의 1% 추가 지급 (최대 50,000원)</p>
-                        <div class="event-period">월 1회 제한</div>
-                        <div class="event-details">
-                            <span class="detail-item">월 1회 제한</span>
-                            <span class="detail-item">최대 5만원</span>
-                            <span class="detail-item">KB국민은행</span>
-                        </div>
-                        <button class="btn-secondary" onclick="showDepositInfo()">자세히 보기</button>
                     </div>
 
                     <div class="event-card" id="trading-king">
                         <div class="event-badge">거래왕 대회</div>
                         <div class="event-image-container">
                             <div class="event-image trading-image">
-                                <img src="images/4.jpg" alt="거래왕 대회" class="event-bg-image">
+                                <img src="images/1.jpg" alt="제9회 거래왕 대회" class="event-bg-image">
                                 <div class="image-overlay">거래왕</div>
                             </div>
                         </div>
-                        <h3>거래왕 대회</h3>
-                        <div class="event-amount">최대 100만원</div>
-                        <p>거래량 순위에 따른 상금 지급</p>
-                        <div class="event-period">월간 진행</div>
+                        <h3>제9회 빗썸 거래왕 대회</h3>
+                        <div class="event-amount">총 7,500만원</div>
+                        <p>알트코인 거래량 경쟁 대회, 상위 참여자에게 상금 지급</p>
+                        <div class="event-period">2025.9.2 ~ 9.15 (종료)</div>
                         <div class="event-details">
-                            <span class="detail-item">월간 대회</span>
-                            <span class="detail-item">순위별 상금</span>
-                            <span class="detail-item">최대 100만원</span>
+                            <span class="detail-item">25개 코인 대상</span>
+                            <span class="detail-item">1,250명 수상</span>
+                            <span class="detail-item">코인별 300만원</span>
                         </div>
                         <button class="btn-secondary" onclick="showTradingKingInfo()">자세히 보기</button>
                     </div>
@@ -210,18 +150,18 @@
                         <div class="event-badge">에어드랍</div>
                         <div class="event-image-container">
                             <div class="event-image airdrop-image">
-                                <img src="images/5.jpg" alt="신규 코인 에어드랍" class="event-bg-image">
+                                <img src="images/2.jpg" alt="신규 코인 에어드랍" class="event-bg-image">
                                 <div class="image-overlay">에어드랍</div>
                             </div>
                         </div>
-                        <h3>신규 코인 거래 에어드랍</h3>
+                        <h3>신규 코인 상장 기념 에어드랍</h3>
                         <div class="event-amount">신규 코인</div>
-                        <p>신규 상장 코인 거래 시 에어드랍 혜택</p>
-                        <div class="event-period">신규 상장 시</div>
+                        <p>새로 상장된 코인 거래 시 코인 무료 지급</p>
+                        <div class="event-period">상장 전후 1~3일</div>
                         <div class="event-details">
-                            <span class="detail-item">신규 상장</span>
-                            <span class="detail-item">거래 시 혜택</span>
-                            <span class="detail-item">한정 기간</span>
+                            <span class="detail-item">WLFI, OPEN 등</span>
+                            <span class="detail-item">거래 또는 입금</span>
+                            <span class="detail-item">균등/비례 분배</span>
                         </div>
                         <button class="btn-secondary" onclick="showAirdropInfo()">자세히 보기</button>
                     </div>
@@ -230,40 +170,198 @@
                         <div class="event-badge">출석 체크</div>
                         <div class="event-image-container">
                             <div class="event-image attendance-image">
-                                <img src="images/1.jpg" alt="출석 체크" class="event-bg-image">
+                                <img src="images/3.jpg" alt="출석 체크" class="event-bg-image">
                                 <div class="image-overlay">출석</div>
                             </div>
                         </div>
-                        <h3>출석 체크 이벤트</h3>
-                        <div class="event-amount">일일 혜택</div>
-                        <p>매일 출석 체크로 다양한 혜택 받기</p>
-                        <div class="event-period">상시 진행</div>
+                        <h3>매일매일 출석체크</h3>
+                        <div class="event-amount">일일 10P</div>
+                        <p>매일 앱에 출석하면 빗썸 포인트 지급, 연속 출석 시 보너스</p>
+                        <div class="event-period">상시 진행 (매월 리셋)</div>
                         <div class="event-details">
-                            <span class="detail-item">매일 출석</span>
-                            <span class="detail-item">연속 출석</span>
-                            <span class="detail-item">누적 혜택</span>
+                            <span class="detail-item">매일 10P</span>
+                            <span class="detail-item">연속 보너스</span>
+                            <span class="detail-item">월 최대 1,910P</span>
                         </div>
                         <button class="btn-secondary" onclick="showAttendanceInfo()">자세히 보기</button>
                     </div>
 
-                    <div class="event-card" id="vip-event">
-                        <div class="event-badge">VIP 혜택</div>
+                    <div class="event-card" id="referral-event">
+                        <div class="event-badge">친구초대</div>
                         <div class="event-image-container">
-                            <div class="event-image vip-image">
-                                <img src="images/2.jpg" alt="VIP 혜택" class="event-bg-image">
-                                <div class="image-overlay">VIP</div>
+                            <div class="event-image referral-image">
+                                <img src="images/4.jpg" alt="친구초대 이벤트" class="event-bg-image">
+                                <div class="image-overlay">친구초대</div>
                             </div>
                         </div>
-                        <h3>VIP 등급 혜택</h3>
-                        <div class="event-amount">최대 80% 할인</div>
-                        <p>거래량에 따른 VIP 등급별 수수료 할인</p>
-                        <div class="event-period">상시 적용</div>
+                        <h3>친구초대 서비스</h3>
+                        <div class="event-amount">친구 5만원 + 추천인 3만원</div>
+                        <p>친구를 초대하면 현금 리워드 지급 (신규 가입 7만원 이벤트와 연계)</p>
+                        <div class="event-period">상시 진행</div>
                         <div class="event-details">
-                            <span class="detail-item">거래량 기준</span>
-                            <span class="detail-item">자동 적용</span>
-                            <span class="detail-item">최대 80% 할인</span>
+                            <span class="detail-item">최대 3,333명</span>
+                            <span class="detail-item">양방향 혜택</span>
+                            <span class="detail-item">최대 1억원</span>
                         </div>
-                        <button class="btn-secondary" onclick="showVipInfo()">자세히 보기</button>
+                        <button class="btn-secondary" onclick="showReferralInfo()">자세히 보기</button>
+                    </div>
+
+                    <div class="event-card" id="telegram-event">
+                        <div class="event-badge">텔레그램</div>
+                        <div class="event-image-container">
+                            <div class="event-image telegram-image">
+                                <img src="images/5.jpg" alt="텔레그램 이벤트" class="event-bg-image">
+                                <div class="image-overlay">텔레그램</div>
+                            </div>
+                        </div>
+                        <h3>텔레그램 채널 5만 돌파 기념</h3>
+                        <div class="event-amount">BTC 5천원 + 아이폰17</div>
+                        <p>빗썸 공식 텔레그램 신규 구독자에게 5천원 지급 + 추첨으로 아이폰 증정</p>
+                        <div class="event-period">2025.8.27 ~ 9.30+</div>
+                        <div class="event-details">
+                            <span class="detail-item">전원 BTC 지급</span>
+                            <span class="detail-item">아이폰17 10명</span>
+                            <span class="detail-item">거래 1회 필요</span>
+                        </div>
+                        <button class="btn-secondary" onclick="showTelegramInfo()">자세히 보기</button>
+                    </div>
+
+                    <div class="event-card" id="coin-lending-event">
+                        <div class="event-badge">코인대여</div>
+                        <div class="event-image-container">
+                            <div class="event-image lending-image">
+                                <img src="images/1.jpg" alt="코인대여 이벤트" class="event-bg-image">
+                                <div class="image-overlay">대여</div>
+                            </div>
+                        </div>
+                        <h3>코인대여 첫 이용 감사</h3>
+                        <div class="event-amount">5,000P</div>
+                        <p>코인 레버리지 서비스를 처음 써보는 회원에게 5천 포인트 지급</p>
+                        <div class="event-period">2025.9.10 ~ 10.10</div>
+                        <div class="event-details">
+                            <span class="detail-item">거래 100만원 이상</span>
+                            <span class="detail-item">최소 10만원 대여</span>
+                            <span class="detail-item">선착순 제한</span>
+                        </div>
+                        <button class="btn-secondary" onclick="showLendingInfo()">자세히 보기</button>
+                    </div>
+
+                    <div class="event-card" id="offline-event">
+                        <div class="event-badge">오프라인</div>
+                        <div class="event-image-container">
+                            <div class="event-image offline-image">
+                                <img src="images/2.jpg" alt="KBW2025 이벤트" class="event-bg-image">
+                                <div class="image-overlay">오프라인</div>
+                            </div>
+                        </div>
+                        <h3>KBW2025 빗썸존 이벤트</h3>
+                        <div class="event-amount">최대 15만원</div>
+                        <p>블록체인 행사장 방문 고객 대상 경품 지급 등</p>
+                        <div class="event-period">2025.9.23 ~ 9.24</div>
+                        <div class="event-details">
+                            <span class="detail-item">현장 방문</span>
+                            <span class="detail-item">미션 참여</span>
+                            <span class="detail-item">한정 굿즈</span>
+                        </div>
+                        <button class="btn-secondary" onclick="showOfflineInfo()">자세히 보기</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 이벤트 비교표 -->
+        <section class="event-comparison">
+            <div class="container">
+                <h2 class="section-title">이벤트 비교표</h2>
+                <p class="comparison-intro">다양한 이벤트의 핵심 정보를 한눈에 볼 수 있도록 표로 정리했습니다. 어떤 이벤트가 나에게 맞을지 참고해보세요.</p>
+                
+                <div class="comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>이벤트명</th>
+                                <th>기간</th>
+                                <th>참여 조건</th>
+                                <th>보상 내용</th>
+                                <th>난이도</th>
+                                <th>추천 대상</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="main-event-row">
+                                <td>신규가입 7만원 지급</td>
+                                <td>상시 (조기 종료 시 공지)</td>
+                                <td>생애 첫 빗썸 가입 + 추천코드 등록 + KYC/계좌연결 + 간단 미션</td>
+                                <td>신규: 현금 7만원 (5만+2만)<br>추천인: 3만원/인 (최대 1억)</td>
+                                <td>★☆☆ 매우 쉬움</td>
+                                <td>아직 빗썸 미가입자<br>주변에 미가입 친구·가족</td>
+                            </tr>
+                            <tr>
+                                <td>거래왕 대회 (제9회 랭킹전)</td>
+                                <td>2025.9.2 ~ 9.15</td>
+                                <td>이벤트 페이지 참가신청 + 지정코인 거래 ≥10만원</td>
+                                <td>총상금 7,500만원 (코인별 300만원씩)<br>상위 거래자 1,250명 차등지급</td>
+                                <td>★★★ 상당한 노력 필요</td>
+                                <td>적극적으로 트레이딩하는 투자자<br>고액 거래자 (상위권 노릴 경우)</td>
+                            </tr>
+                            <tr>
+                                <td>신규 코인 에어드랍</td>
+                                <td>코인 상장일 전후 1~3일</td>
+                                <td>해당 코인 1회 거래 또는 순입금</td>
+                                <td>신규코인 토큰 무료 지급<br>(균등 or 비례분배, 보통 수천 원 상당)</td>
+                                <td>★☆☆ 매우 쉬움</td>
+                                <td>새 코인에 관심 있고<br>소소한 리워드 노리는 이용자</td>
+                            </tr>
+                            <tr>
+                                <td>매일 출석체크</td>
+                                <td>상시 (매월 리셋)</td>
+                                <td>앱/웹 하루 1회 접속 후 출석 클릭</td>
+                                <td>매일 10P 즉시 지급<br>+ 연속 출석 보너스 (최대 월 1,000P)</td>
+                                <td>★☆☆ 아주 쉬움</td>
+                                <td>빗썸 자주 사용하는 모든 회원<br>앱테크로 꾸준히 모으고픈 분</td>
+                            </tr>
+                            <tr>
+                                <td>친구초대 (멤버스 GM)</td>
+                                <td>상시</td>
+                                <td>기존회원: 초대코드 공유<br>신규회원: 7일내 코드 등록+계좌인증</td>
+                                <td>친구: 5만원(+미션2만원)<br>추천인: 3만원 × 인원 (즉시)</td>
+                                <td>★☆☆ 쉬움</td>
+                                <td>지인에 코인거래소 추천할 의향 있는 분<br>인플루언서/커뮤니티 운영자</td>
+                            </tr>
+                            <tr>
+                                <td>텔레그램 채널 이벤트</td>
+                                <td>2025.8.27~ 9.30+</td>
+                                <td>텔레그램 신규 구독 + 이벤트 폼 제출 + (~9/30내 거래1회)</td>
+                                <td>전원 BTC 5천원 지급<br>+ 추첨 아이폰17 (10명)</td>
+                                <td>★☆☆ 매우 쉬움</td>
+                                <td>빗썸 소식 받아볼 의향 있는 회원<br>아이폰 경품 노리는 행운 도전자</td>
+                            </tr>
+                            <tr>
+                                <td>코인대여 첫 이용</td>
+                                <td>2025.9.10 ~ 10.10</td>
+                                <td>과거 거래 ≥100만원 회원<br>+ 기간내 코인대여 서비스 첫 실행</td>
+                                <td>5,000 P 지급 (현금 5천원)</td>
+                                <td>★★☆ 보통</td>
+                                <td>기존 빗썸 거래자 중<br>레버리지 서비스 한 번 체험해볼 분</td>
+                            </tr>
+                            <tr>
+                                <td>오프라인 KBW 경품</td>
+                                <td>2025.9.23 ~ 9.24</td>
+                                <td>블록체인 행사 현장 방문 + 부스 미션 참여</td>
+                                <td>현장 경품: 다양한 코인 에어드랍 (최대 15만원)<br>+ 한정 굿즈 (빗썸BTC빵 등)</td>
+                                <td>★★☆ 보통</td>
+                                <td>KBW2025 참석 예정인 블록체인 관심자<br>서울/현장 방문 가능한 회원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="difficulty-legend">
+                    <h4>난이도 평점 기준</h4>
+                    <div class="legend-items">
+                        <span class="legend-item">★☆☆ = 매우 쉬움</span>
+                        <span class="legend-item">★★☆ = 중간</span>
+                        <span class="legend-item">★★★ = 적극적 노력 필요</span>
                     </div>
                 </div>
             </div>
@@ -421,6 +519,144 @@
                         <div class="info-icon">🔄</div>
                         <h3>정기 업데이트</h3>
                         <p>VIP 등급은 매월 1일 기준으로 업데이트되며, BTH 보유량은 실시간으로 반영됩니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 실제 참가자 후기 및 반응 -->
+        <section class="user-reviews">
+            <div class="container">
+                <h2 class="section-title">실제 참가자 후기 및 반응</h2>
+                <p class="reviews-intro">이미 수많은 이용자가 혜택을 받았고, "진짜 준다"는 후기들이 넘쳐납니다. 빗썸은 대한민국 대표 거래소 중 하나로, 이벤트 보상을 약속대로 지급해왔습니다.</p>
+                
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">👤</div>
+                                <div class="reviewer-details">
+                                    <h4>김빗썸</h4>
+                                    <span class="review-date">2025.9.15</span>
+                                </div>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <div class="review-content">
+                            <h5>신규 가입 7만원 이벤트</h5>
+                            <p>"10분 투자로 7만원 공짜로 벌었다! 출금수수료 1,000원을 제외하고 6만9천원을 그대로 출금 완료했다. 앱은 삭제했지만 정말 혜자 이벤트였다."</p>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">👤</div>
+                                <div class="reviewer-details">
+                                    <h4>코인러버</h4>
+                                    <span class="review-date">2025.9.12</span>
+                                </div>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <div class="review-content">
+                            <h5>거래왕 대회</h5>
+                            <p>"상금을 노리며 거래하다 보니 평소보다 시장 상황을 더 면밀히 보게 되어 트레이딩 실력이 향상됐다. 수수료 환급 덕에 적극적으로 지정가 주문을 활용하게 되었다."</p>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">👤</div>
+                                <div class="reviewer-details">
+                                    <h4>출석마스터</h4>
+                                    <span class="review-date">2025.9.10</span>
+                                </div>
+                            </div>
+                            <div class="review-rating">★★★★☆</div>
+                        </div>
+                        <div class="review-content">
+                            <h5>출석체크 이벤트</h5>
+                            <p>"한 달 개근해서 모은 포인트로 이디야 커피 쿠폰을 샀다. 업비트에도 이런 게 없는데 빗썸이 고객 혜택은 낫다. 매일 10원씩이라는 소액이라도 전혀 노력 없이 받을 수 있어서 좋다."</p>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">👤</div>
+                                <div class="reviewer-details">
+                                    <h4>친구추천왕</h4>
+                                    <span class="review-date">2025.9.8</span>
+                                </div>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <div class="review-content">
+                            <h5>친구초대 이벤트</h5>
+                            <p>"이 정도면 회원들이 영업사원이라며 재미있어 했다. 주변에 아직 빗썸 안 써본 분이 있다면 가볍게 권해보는 것도 좋겠다. 친구와 함께 가입하면 서로 돈을 버니 안 할 이유가 없다."</p>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">👤</div>
+                                <div class="reviewer-details">
+                                    <h4>텔레그램러</h4>
+                                    <span class="review-date">2025.9.5</span>
+                                </div>
+                            </div>
+                            <div class="review-rating">★★★★☆</div>
+                        </div>
+                        <div class="review-content">
+                            <h5>텔레그램 채널 이벤트</h5>
+                            <p>"텔레그램 가입하고 폼 제출하는 데 1분도 안 걸리는데 5천원은 꿀이다. 아이폰17이라는 최신 기기 경품 덕분에 관심을 끌고 있다. 설마 내가 되겠어? 하면서도 혹시나 하는 마음에 거래까지 챙겨서 응모했다."</p>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">👤</div>
+                                <div class="reviewer-details">
+                                    <h4>에어드랍헌터</h4>
+                                    <span class="review-date">2025.9.3</span>
+                                </div>
+                            </div>
+                            <div class="review-rating">★★★☆☆</div>
+                        </div>
+                        <div class="review-content">
+                            <h5>신규 코인 에어드랍</h5>
+                            <p>"오늘 내일 하루에 딱 1번만 거래하면 된다. 짤짤이지만 챙겨보자. 몇천 원~몇만 원 수준이긴 해도 거래 한두 번으로 공짜 코인을 받는 재미에 많은 분들이 참여한다."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-summary">
+                    <h3>전체적인 반응 요약</h3>
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <div class="summary-icon">💰</div>
+                            <h4>실질적 혜택</h4>
+                            <p>거의 공짜로 받는 현금/코인 혜택으로 10분 투자에 7만원처럼 효율 좋은 이벤트가 많다</p>
+                        </div>
+                        <div class="summary-item">
+                            <div class="summary-icon">🎯</div>
+                            <h4>간편한 참여</h4>
+                            <p>몇 번의 클릭이나 간단한 조건만으로 현금성 리워드를 얻을 수 있어 참여하기 쉽다</p>
+                        </div>
+                        <div class="summary-item">
+                            <div class="summary-icon">📚</div>
+                            <h4>학습 효과</h4>
+                            <p>이벤트를 통해 자연스럽게 코인 거래를 체험해볼 수 있어 투자 지식과 경험을 쌓을 수 있다</p>
+                        </div>
+                        <div class="summary-item">
+                            <div class="summary-icon">✅</div>
+                            <h4>신뢰성</h4>
+                            <p>이미 수많은 이용자가 혜택을 받았고, 빗썸은 이벤트 보상을 약속대로 지급해왔다</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -380,6 +380,70 @@ section {
     line-height: 1.5;
 }
 
+.event-overview {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 152, 0, 0.1) 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 30px;
+    border-left: 4px solid #ffc107;
+}
+
+.event-overview h4 {
+    color: #ff8f00;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.event-overview p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.important-notes {
+    margin-top: 60px;
+    background: #fff3cd;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #ffeaa7;
+}
+
+.important-notes h3 {
+    color: #856404;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.note-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid #ff6b6b;
+}
+
+.note-item h4 {
+    color: #d63031;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.note-item p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
 /* 정보 그리드 */
 .info-grid {
     display: grid;
@@ -782,6 +846,309 @@ section {
     bottom: 0;
     background: linear-gradient(135deg, rgba(76, 175, 80, 0.3) 0%, rgba(139, 195, 74, 0.3) 100%);
     z-index: 1;
+}
+
+.telegram-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.3) 0%, rgba(0, 86, 179, 0.3) 100%);
+    z-index: 1;
+}
+
+.lending-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(108, 117, 125, 0.3) 0%, rgba(73, 80, 87, 0.3) 100%);
+    z-index: 1;
+}
+
+.offline-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.3) 0%, rgba(200, 35, 51, 0.3) 100%);
+    z-index: 1;
+}
+
+/* 이벤트 비교표 스타일 */
+.event-comparison {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.comparison-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.comparison-table-container {
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    min-width: 1000px;
+}
+
+.comparison-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.comparison-table th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+}
+
+.comparison-table td {
+    padding: 20px 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.comparison-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.main-event-row {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 152, 0, 0.1) 100%);
+    font-weight: 600;
+}
+
+.main-event-row td {
+    border-bottom: 2px solid #ffc107;
+}
+
+.difficulty-legend {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.difficulty-legend h4 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.legend-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    background: #f8f9fa;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    color: #666;
+    border: 2px solid #e9ecef;
+}
+
+@media (max-width: 768px) {
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 15px 10px;
+    }
+    
+    .legend-items {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* 참가자 후기 섹션 스타일 */
+.user-reviews {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.reviews-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 50px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.review-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.reviewer-avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.reviewer-details h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.review-date {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.review-rating {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.review-content h5 {
+    color: #667eea;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.review-content p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+}
+
+.reviews-summary {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.reviews-summary h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.summary-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.summary-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.summary-item h4 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.summary-item p {
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .review-card {
+        padding: 20px;
+    }
+    
+    .reviewer-info {
+        gap: 10px;
+    }
+    
+    .reviewer-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .summary-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
 /* FAQ 섹션 */
