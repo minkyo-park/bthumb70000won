@@ -1544,6 +1544,47 @@ section {
     gap: 40px;
 }
 
+/* PC에서 이미지 가로 배치 */
+@media (min-width: 1024px) {
+    .steps-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        align-items: start;
+    }
+    
+    .steps-container .step-item:nth-child(4) {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    
+    .steps-container .step-item:nth-child(4) .step-number {
+        flex-shrink: 0;
+    }
+    
+    .steps-container .step-item:nth-child(4) .step-content {
+        flex: 1;
+    }
+    
+    /* 케이스 2의 4단계도 가로로 배치 */
+    .usage-case:nth-child(2) .steps-container .step-item:nth-child(4) {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    
+    .usage-case:nth-child(2) .steps-container .step-item:nth-child(4) .step-number {
+        flex-shrink: 0;
+    }
+    
+    .usage-case:nth-child(2) .steps-container .step-item:nth-child(4) .step-content {
+        flex: 1;
+    }
+}
+
 .step-item {
     display: flex;
     align-items: flex-start;
