@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://bthumb70000won.vercel.app/sitemap.xml
+Sitemap: https://www.snack-test.com/sitemap.xml
 
 # Disallow specific paths if needed
 # Disallow: /admin/
